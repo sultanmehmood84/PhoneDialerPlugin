@@ -1,9 +1,9 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android"
     id="com.saviicare.phonedialer"
-    version="0.3.0">
+    version="1.0.0">
     <name>SaviiDialer</name>
     <description>Dials Phone without extra confirmation pop-up</description>
-    <license>Apache 2.0</license>
+    <license>Apache 3.0</license>
     <keywords>cordova,dialer</keywords>
     <js-module src="www/dialer.js" name="phonedialer">
         <merges target="phonedialer" />
