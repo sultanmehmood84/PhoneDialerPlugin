@@ -3,7 +3,7 @@
     version="1.0.0">
     <name>SaviiDialer</name>
     <description>Dials Phone without extra confirmation pop-up</description>
-    <license>Apache 3.0</license>
+    <license>Apache 2.0</license>
     <keywords>cordova,dialer</keywords>
     <js-module src="www/dialer.js" name="phonedialer">
         <merges target="phonedialer" />
