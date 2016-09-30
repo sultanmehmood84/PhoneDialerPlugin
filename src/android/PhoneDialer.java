@@ -7,7 +7,6 @@ import org.json.JSONException;
 import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
-import java.net;
 
 public class PhoneDialer extends CordovaPlugin {
 	@Override
