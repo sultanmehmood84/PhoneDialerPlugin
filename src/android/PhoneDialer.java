@@ -14,7 +14,7 @@ public class PhoneDialer extends CordovaPlugin {
 	    try {
 	    	String phoneNumber = args.getString(0);
 		String encodedPhonenumber = "+19197257941,43188,#,29493,#";
-	    	Uri uri = Uri.parse("tel:"+encodedPhonenumber);
+	    	Uri uri = new Uri.Builder().scheme("tel").encodedPath(phonenumber).build();
             Intent callIntent = new Intent(Intent.ACTION_CALL);
             callIntent.setData(uri);
             this.cordova.getActivity().startActivity(callIntent);
