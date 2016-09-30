@@ -7,13 +7,14 @@ import org.json.JSONException;
 import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
+import java.net;
 
 public class PhoneDialer extends CordovaPlugin {
 	@Override
 	public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
 	    try {
 	    	String phoneNumber = args.getString(0);
-		String encodedPhonenumber = "+19197257941,43188,#,29493,#";
+		String encodedPhonenumber = URLEncoder.encode(phoneNumber, "UTF-8");
 	    	Uri uri = Uri.parse("tel:"+encodedPhonenumber);
             Intent callIntent = new Intent(Intent.ACTION_CALL);
             callIntent.setData(uri);
