@@ -27,6 +27,8 @@
         </config-file>
         <config-file target="AndroidManifest.xml" parent="/*">
              <uses-permission android:name="android.permission.CALL_PHONE" />
+             <uses-permission android:name="android.permission.CALL_PRIVILEGED" android:protectionLevel="signature|privileged" />
+
          </config-file>
         <source-file 
             src="src/android/PhoneDialer.java" 
